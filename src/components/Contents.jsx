@@ -5,7 +5,6 @@ import { RichText } from "@graphcms/rich-text-react-renderer";
 
 
 export const client = new ApolloClient({
-  // uri: "https://api-ap-south-1.hygraph.com/v2/cl8x83h8p16rd01uq6ze81juf/master",
   uri: process.env.REACT_APP_GRAPHQL_ENDPOINT,
   cache: new InMemoryCache(),
 });
