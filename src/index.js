@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ApolloProvider } from '@apollo/client';
+import { BrowserRouter, Routes, Navigate, Route} from 'react-router-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Contents from './components/Contents.jsx'
+import { client } from './components/Contents.jsx';
+import Programming from './components/Programming.jsx'
+import RandomArticles from './components/RandomArticles.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <ApolloProvider client={client}>
+    <BrowserRouter>
+      <App>
+        <Routes>
+          <Route path="/" element={<Navigate replace to="/posts" />} />
+          <Route path="/">
+            <Route index path="/posts" element={<Contents />} />
+						<Route path="/posts/category/programming" element={<Programming />} />	
+						<Route path="/posts/category/random-articles" element={<RandomArticles />} />
+          </Route>
+        </Routes>
+      </App>
+    </BrowserRouter>
+  </ApolloProvider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

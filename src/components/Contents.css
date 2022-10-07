@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.contents {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.introduction {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+	line-height: 27px;
+	opacity: .7;
+}
+
+.date {
+	opacity: .4;
+	font-size: 14px;
+}
+
+.article-heading {
+	font-family: 'Open Sans', sans-serif;
+	opacity: .8
+}
+
+.article-content p {
+	line-height:27px !important;
+	margin: 20px 0 0 0;
+	font-size: 17px !important;
+	opacity: .8 !important;
+}
+
+pre {
+	background: #F8F8FA;
+	font-size: 14px;
+	border: 1px solid #DBDFED;
+	border-radius: 3px;
+	padding: 10px 20px 10px 20px;
+	margin: 20px 0 20px 0;
+}
+
+code {
+	background: #F8F8FA;
+	font-size: 13px;
+	border: 1px solid #DBDFED;
+	border-radius: 4px;
+	padding: 4px 8px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 700
+}
+
+h2 {
+	font-size: 24px;
+	opacity: .8 !important;
+	margin: 10px 0
+}
+
+h3 {
+	font-size: 18.72px;
+	opacity: .8 !important;
+	margin: 10px 0
+}
+
+h4 {
+	font-size: 16px;
+	opacity: .8 !important;
+margin: 10px 0
+}
+
+h5 {
+	font-size: 13.28px;
+	opacity: .8 !important;
+margin: 10px 0
+}
+
+h6 {
+	font-size: 10.72px;
+	opacity: .8 !important;
+margin: 10px 0
+}
+
+li {
+	line-height:27px !important;
+	font-size: 17px !important;
+	opacity: .8 !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+  h2 {
+		font-size: 20px
+  }
+}
+blockquote {
+	border-left: 7px solid #ECEDE4;
+	padding-left: 40px;
+	margin:30px 0 ;
+}
+.article-content img {
+	margin: 30px 0;
+	text-align:center
+}
+
+

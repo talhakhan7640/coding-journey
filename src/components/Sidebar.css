@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.sidebar .sidebar-menu li a {
+	color: #5CA7E9;	
+	font-size: 14px;
+font-family: 'Open Sans', sans-serif;
+line-height: 22px;
+}
+
+.sidebar .sidebar-menu li {
+   line-height: 22px; 
+}
+
+.sidebar .sidebar-heading {
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	opacity: .7;
+}
+
+.sidebar .sidebar-menu .sidebar-menu-item {
+	opacity: .8;
+	line-height: 22px
+}
+
+.sidebar .sidebar-menu .sidebar-menu-item a:hover {
+	color: black; 
+}
