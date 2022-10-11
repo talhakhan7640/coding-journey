@@ -11,7 +11,7 @@ export const client = new ApolloClient({
 
 const QUERY = gql`
 	query Posts {
-		posts {
+		posts(orderBy: publishedDate_DESC) {
 			category
 			id
 			publishedDate
